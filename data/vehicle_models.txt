@@ -1,0 +1,14 @@
+Kia Cee'd,1500
+Kia Sportage,1500
+Kia Optima,1500
+Opel Astra,1000
+Opel Insignia,1000
+Opel Corsa,1000
+Hyundai Elantra,700
+Hyundai I20,700
+Hyundai I30,700
+Hyundai Tuscon,700
+Fiat Bravo,500
+Fiat Tipo,500
+Fiat Stillo,500
+Fiat Albea,500

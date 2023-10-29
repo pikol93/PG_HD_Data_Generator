@@ -1,0 +1,331 @@
+Czarlin,ul. Starogardzka
+Czarlin,ul. Sadowa
+Czarlin,ul. Spacerowa
+Czarlin,ul. Tczewska
+Czarlin,ul. Gniewska
+Czarlin,ul. Krótka
+Czarlin,ul. Prosta
+Czarlin,ul. Słoneczna
+Czarlin,ul. Dworcowa
+Czarlin,ul. Leśna
+Czarlin,ul. Szkolna
+Czarlin,ul. Za Torami
+Czarlin,ul. Lipowa
+Czarlin,ul. Narkowska
+Czarlin,ul. Klonowa
+Czarlin,ul. Malborska
+Rokitki,ul. Kolejowa
+Rokitki,ul. Świerkowa
+Rokitki,ul. Brzozowa
+Rokitki,ul. Cyprysowa
+Rokitki,ul. Tczewska
+Rokitki,ul. Krótka
+Rokitki,ul. Słoneczna
+Rokitki,ul. Leśna
+Rokitki,ul. Skarszewska
+Rokitki,ul. Kasztanowa
+Rokitki,ul. Jesionowa
+Rokitki,ul. Piękna
+Rokitki,ul. Kwiatowa
+Rokitki,ul. Polana Leśna
+Rokitki,ul. Nowa
+Rokitki,ul. Makowa
+Rokitki,ul. Czereśniowa
+Rokitki,ul. Wiśniowa
+Lisewo Malborskie,ul. Marca 10
+Lisewo Malborskie,ul. Niepodległości
+Lisewo Malborskie,ul. Braterska
+Lisewo Malborskie,ul. Kolejowa
+Lisewo Malborskie,ul. Wyzwolenia
+Lisewo Malborskie,ul. Robotnicza
+Lisewo Malborskie,ul. Jana Pawła II
+Bałdowo,ul. Długa
+Bałdowo,ul. Wojciecha św.
+Bałdowo,ul. Złote Łany
+Bałdowo,ul. Miłosza Czesława
+Bałdowo,ul. Spokojna
+Bałdowo,ul. Stenclówka
+Bałdowo,ul. Na Wzgórzu
+Bałdowo,ul. Miła
+Bałdowo,ul. Piękna
+Bałdowo,ul. Słoneczna
+Bałdowo,ul. Stanisława
+Bałdowo,ul. Boczna
+Bałdowo,ul. Gospodarcza
+Bałdowo,ul. Wspólna
+Bałdowo,ul. Malborska
+Zajączkowo,ul. Brzozowa
+Zajączkowo,ul. Ogrodowa
+Zajączkowo,ul. Malinowa
+Zajączkowo,ul. Lisia
+Tczew,ul. Akacjowa
+Tczew,ul. Chełmońskiego Józefa
+Tczew,Armii Czerwonej
+Tczew,ul. Baczyńskiego Krzysztofa Kamila
+Tczew,ul. Brzechwy Jana
+Tczew,ul. Czyżykowska
+Tczew,ul. Fabryczna
+Tczew,ul. Fredry Aleksandra
+Tczew,ul. Iwaszkiewicza Jarosława
+Tczew,ul. Jaworowa
+Tczew,ul. Jodłowa
+Tczew,ul. Kozia
+Tczew,ul. Krótka
+Tczew,ul. Broniewskiego Władysława
+Tczew,ul. Elżbiety
+Tczew,ul. Gdańska
+Tczew,ul. Kapitańska
+Tczew,ul. Kaszubska
+Tczew,ul. Lipowa
+Tczew,ul. Mieszka I
+Tczew,ul. Nowowiejska
+Tczew,ul. Pomorska
+Tczew,ul. Przemysława II
+Tczew,ul. Skarszewska
+Tczew,ul. Skromna
+Tczew,ul. Stanisławskiego Jana
+Tczew,ul. Strzelecka
+Tczew,ul. Suchostrzycka
+Tczew,ul. Władysława Jagiełły
+Tczew,ul. Za Portem
+Tczew,ul. Żuławska
+Tczew,ul. Brzozowa
+Tczew,ul. Dąbrowskiego Jarosława
+Tczew,ul. Garncarska
+Tczew,ul. Hass Hanny
+Tczew,ul. Kościelna
+Tczew,ul. Bony Królowej
+Tczew,ul. Marysieńki Królowej
+Tczew,ul. Piaskowa
+Tczew,ul. Pola Wincentego
+Tczew,ul. Prusa Bolesława
+Tczew,ul. Sadowa
+Tczew,ul. Sambora
+Tczew,ul. Samborówny Małgorzaty
+Tczew,ul. Jana Sobieskiego
+Tczew,ul. Spacerowa
+Tczew,ul. Starowiejska
+Tczew,ul. Traugutta Romualda
+Tczew,ul. Wierzbowa
+Tczew,ul. Szewczyka Dratewki
+Tczew,ul. Andersa Władysława
+Tczew,ul. Andersena Christiana
+Tczew,ul. Głowackiego Bartosza
+Tczew,ul. Gryfa Pomorskiego
+Tczew,ul. Kolejowa
+Tczew,ul. Łazienna
+Tczew,ul. Maja 1
+Tczew,ul. Paderewskiego Ignacego
+Tczew,ul. Rybacka
+Tczew,ul. Stwosza Wita
+Tczew,ul. Targowa
+Tczew,ul. Topolowa
+Tczew,ul. Zielona
+Tczew,ul. Dobrawy Księżniczki
+Tczew,ul. Wyszyńskiego Stefana Kardynała
+Tczew,ul. Czatkowska
+Tczew,ul. Dokerów
+Tczew,ul. Dominikańska
+Tczew,ul. Działkowa
+Tczew,ul. Jana z Kolna
+Tczew,ul. Korczaka Janusza
+Tczew,ul. Kossaka Wojciecha
+Tczew,ul. Jadwigi Królowej
+Tczew,ul. Kusocińskiego Janusza
+Tczew,ul. Lotnicza
+Tczew,ul. Marynarska
+Tczew,ul. Młyńska
+Tczew,ul. Bałdowska
+Tczew,ul. Bolesława Chrobrego
+Tczew,ul. Borchardta Karola
+Tczew,ul. Boya-Żeleńskiego Tadeusza
+Tczew,ul. Chłodna
+Tczew,ul. Chłopska
+Tczew,ul. Flisaków
+Tczew,ul. Jagiellońska
+Tczew,ul. Jasińskiego Jakuba
+Tczew,ul. Jedności Narodu
+Tczew,ul. Jurgo Władysława
+Tczew,Konstytucji 3 Maja
+Tczew,ul. Krucza
+Tczew,ul. Łąkowa
+Tczew,ul. Nad Wisłą
+Tczew,ul. Niepodległości
+Tczew,ul. Ogrodowa
+Tczew,ul. Piastowska
+Tczew,ul. Pionierów
+Tczew,ul. Podmurna
+Tczew,ul. Półwiejska
+Tczew,ul. Rycerska
+Tczew,ul. Saperska
+Tczew,ul. Staffa Leopolda
+Tczew,ul. Szyprów
+Tczew,ul. Wilcza
+Tczew,ul. Wiślana
+Tczew,ul. Wojska Polskiego
+Tczew,ul. Zamkowa
+Tczew,ul. Lecha
+Tczew,ul. Malczewskiego Jacka
+Tczew,ul. Mestwina
+Tczew,ul. Mostowa
+Tczew,ul. Nałkowskiej Zofii
+Tczew,ul. Obrońców Tczewa
+Tczew,ul. Podgórna
+Tczew,ul. Portowców
+Tczew,ul. Prosta
+Tczew,ul. Przemysłowa
+Tczew,ul. Przybosia Juliana
+Tczew,ul. Rokicka
+Tczew,ul. Spółdzielcza
+Tczew,ul. Sychty ks. Bernarda
+Tczew,ul. Tuwima Juliana
+Tczew,ul. Witkiewicza Stanisława Ignacego
+Tczew,ul. Zygmunta Starego
+Tczew,ul. Grimm Braci
+Tczew,ul. Czerwonego Kapturka
+Tczew,ul. Dygasińskiego Adolfa
+Tczew,ul. Grunwaldzka
+Tczew,ul. Jarzębinowa
+Tczew,ul. Kasztanowa
+Tczew,ul. Kazimierza Jagiellończyka
+Tczew,ul. Kazimierza Wielkiego
+Tczew,ul. Konopnickiej Marii
+Tczew,ul. Kubusia Puchatka
+Tczew,ul. Nowy Rynek
+Tczew,ul. Okrętowa
+Tczew,ul. Parkowa
+Tczew,ul. Robotnicza
+Tczew,ul. Rzemieślnicza
+Tczew,ul. Sikorskiego gen. Władysława
+Tczew,ul. Stara
+Tczew,ul. Struga Andrzeja
+Tczew,ul. Warsztatowa
+Tczew,ul. Malinowska
+Tczew,ul. Pinokia
+Tczew,ul. Nadbrzeżna
+Tczew,ul. Obrońców Westerplatte
+Tczew,ul. Partyzantów
+Tczew,ul. Polna
+Tczew,ul. Pomira
+Tczew,ul. Wyzwolenia
+Tczew,ul. Za Dworcem
+Tczew,ul. Zapolskiej Gabrieli
+Tczew,ul. Żeromskiego Stefana
+Tczew,ul. Szkoły Morskiej
+Tczew,pl. Plac Papieski
+Tczew,ul. Armii Krajowej
+Tczew,ul. Stefana Batorego
+Tczew,ul. Bosmańska
+Tczew,ul. Ceglarska
+Tczew,ul. Fenikowskiego Franciszka
+Tczew,ul. Harcerska
+Tczew,ul. Jasia i Małgosi
+Tczew,ul. Kręta
+Tczew,ul. Kwiatowa
+Tczew,ul. Nizinna
+Tczew,ul. Nowa
+Tczew,ul. Południowa
+Tczew,ul. Retmańska
+Tczew,ul. Sportowa
+Tczew,ul. Stoczniowców
+Tczew,ul. Stroma
+Tczew,ul. Świętopełka
+Tczew,ul. Wąska
+Tczew,ul. Wodna
+Tczew,ul. Wyczółkowskiego Leona
+Tczew,ul. Czyżewskiego Józefa
+Tczew,ul. Łajming Anny
+Tczew,ul. Bolta ks. Feliksa
+Tczew,ul. Młyńskiego ks. Władysława
+Tczew,ul. Forsterów
+Tczew,ul. Jagalskiego Wiktora
+Tczew,ul. Klima Romana
+Tczew,ul. Bądkowskiego Lecha
+Tczew,ul. Kupczyńskiego ks. Aleksandra
+Tczew,ul. Landowskiego Romana
+Tczew,ul. Kraziewicza Juliusza
+Tczew,ul. Janika ppłk. Stanisława
+Tczew,ul. Pileckiego rotm. Witolda
+Tczew,ul. Żeglarska
+Tczew,bulw. Bulwar Nadwiślański im. Księcia Sambora II
+Tczew,ul. Stankiewicza Kapitana Mamerta
+Tczew,ul. Północna
+Tczew,ul. Gierszewskiego por. Józefa
+Tczew,ul. Wryczy ks. ppłka Józefa
+Tczew,ul. Dambka por. Józefa
+Tczew,ul. Kuklińskiego płka Ryszarda
+Tczew,ul. Dworcowa
+Tczew,ul. Popiełuszki ks. Jerzego
+Tczew,Rondo Kociewskie
+Tczew,Rondo Żołnierzy Wyklętych
+Tczew,ul. Szymborskiej Wisławy
+Tczew,ul. Gazety Tczewskiej
+Tczew,Rondo Jasnej i Dersława
+Tczew,Skwer Tczewskich Kolejarzy
+Tczew,ul. Jabłoniowa
+Tczew,os. Osiedle Jabłoniowe Wzgórze
+Tczew,Wiadukt 800-lecia Tczewa im. Marszałka Sejmu RP Macieja Płażyńskiego
+Tczew,Skwer Doktora Schefflera
+Tczew,ul. Tczewskich Saperów
+Tczew,ul. Poligonowa
+Tczew,ul. Aleja Solidarności
+Tczew,ul. Dominika Biskupa Konstantyna
+Tczew,ul. Pasierba Ks.J.St.
+Tczew,ul. Pułaskiego
+Tczew,ul. Wigury
+Tczew,ul. Wybickiego
+Tczew,ul. Aleja Kociewska
+Tczew,ul. Stycznia 30-go
+Tczew,ul. Gałczyńskiego Konstantego
+Tczew,ul. Kasprowicza
+Tczew,ul. Chopina
+Tczew,ul. Matejki
+Tczew,ul. Kołłątaja
+Tczew,ul. Kościuszki
+Tczew,ul. Krasińskiego
+Tczew,ul. Twardowskiego ks. Jana
+Tczew,ul. Miłosza Czesława
+Tczew,ul. Al. Zwycięstwa
+Tczew,Rondo Spółdzielców
+Tczew,Rondo Dworcowe
+Tczew,ul. Huberta Św.
+Tczew,ul. Myśliwska
+Tczew,ul. Gen.Bema
+Tczew,ul. Frycza Modrzewskiego Andrzeja
+Tczew,ul. Okulickiego Generała Leopolda
+Tczew,ul. Tetmajera
+Tczew,ul. Dąbrowskiego Generała
+Tczew,ul. Mickiewicza
+Tczew,ul. Sienkiewicza
+Tczew,ul. Słowackiego
+Tczew,ul. Kilińskiego
+Tczew,ul. Wybudowanie
+Tczew,ul. Suchostrzygi Dworzec
+Tczew,ul. Orkana
+Tczew,ul. Reja
+Tczew,ul. Kopernika
+Tczew,ul. Żwirki
+Tczew,ul. Piotrowo
+Tczew,ul. Orzeszkowej
+Tczew,ul. Rejtana
+Tczew,ul. Konarskiego
+Tczew,ul. Wyspiańskiego
+Tczew,ul. Ks.Ściegiennego
+Tczew,ul. Bora - Komorowskiego Generała
+Tczew,Rondo Marszałka Józefa Piłsudskiego
+Tczew,ul. Okrzei
+Tczew,ul. Grota - Roweckiego Generała
+Tczew,ul. Norwida C. Kamila
+Tczew,ul. Reymonta Władysława
+Tczew,ul. Kochanowskiego
+Tczew,ul. Staszica
+Tczew,pl. Plac im. Jana Pawła II
+Tczew,Skwer Weteranów II Wojny Światowej
+Tczew,pl. Plac Św. Grzegorza
+Tczew,Skwer 750-lecia Miasta Tczewa
+Tczew,pl. Plac Patriotów
+Tczew,pl. Plac Marszałka Józefa Piłsudskiego
+Tczew,Skwer Romana Dmowskiego
+Tczew,pl. Plac Gen. Józefa Hallera
+Tczew,Skwer Bohaterów Szymankowa
+Tczew,Skwer Ofiar Katynia
