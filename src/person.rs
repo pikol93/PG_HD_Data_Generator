@@ -65,6 +65,12 @@ impl Person {
             pesel_number: pesel,
         }
     }
+
+    pub fn change_to_random_surname(&mut self, generator: &mut ThreadRng) {
+        let new_name = LAST_NAMES_ENTRIES.get_random_entry(generator);
+        println!("Changed last name of person {}: {} -> {}", self.pesel_number, self.last_name, new_name);
+        self.last_name = new_name;
+    }
 }
 
 impl Policeman {

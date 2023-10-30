@@ -30,6 +30,7 @@ const MIN_REPORT_TO_SENDING_SECONDS: i64 = 300;
 const MAX_REPORT_TO_SENDING_SECONDS: i64 = 900;
 const POLICEMEN_COUNT: usize = 80;
 const VEHICLES_COUNT: usize = 60;
+const POLICEMAN_LAST_NAME_CHANGE_EVENTS_COUNT: i64 = 5;
 const TWO_PATROLS_CHANCE: f64 = 0.1;
 
 fn main() {
@@ -61,8 +62,15 @@ fn main() {
             action: EventAction::Snapshot(snapshot_name, *is_terminal),
         });
 
+    let last_name_change_events = (0..POLICEMAN_LAST_NAME_CHANGE_EVENTS_COUNT)
+        .map(|i| Event {
+            time: snapshots.get(0).unwrap().2.checked_add_signed(Duration::days(i)).unwrap(),
+            action: EventAction::PolicemanLastNameChange,
+        });
+
     let mut events = resignation_events
         .chain(snapshot_events)
+        .chain(last_name_change_events)
         .fold(SortedVec::new(), |mut vector, event| {
             vector.push(event);
             vector
@@ -181,6 +189,14 @@ fn main() {
                 if is_terminal {
                     break;
                 }
+            }
+            EventAction::PolicemanLastNameChange => {
+                policemen
+                    .iter_mut()
+                    .map(|policeman| policeman.person)
+                    .choose(&mut generator)
+                    .unwrap()
+                    .change_to_random_surname(&mut generator);
             }
         }
     }

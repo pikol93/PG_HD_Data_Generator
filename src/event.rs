@@ -10,6 +10,7 @@ pub enum EventAction {
     SendPatrol(usize),
     FinishedPatrol(usize),
     Snapshot(&'static str, bool),
+    PolicemanLastNameChange,
 }
 
 
