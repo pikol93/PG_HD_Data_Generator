@@ -21,11 +21,6 @@ const COLUMN_DELIMITER: &str = ",";
 
 pub fn write_places_to_file(snapshot_name: &str, places: &[Place]) {
     let mut file = create_file(snapshot_name, PLACES_OUTPUT_FILE);
-    write_to_file(&mut file, &[
-        "id".to_owned(),
-        "miasto".to_owned(),
-        "ulica".to_owned()
-    ]);
 
     places
         .iter()
@@ -41,15 +36,6 @@ pub fn write_places_to_file(snapshot_name: &str, places: &[Place]) {
 
 pub fn write_reports_to_file(snapshot_name: &str, reports: &[Report]) {
     let mut file = create_file(snapshot_name, REPORTS_OUTPUT_FILE);
-    write_to_file(&mut file, &[
-        "id".to_owned(),
-        "FK_miejsce".to_owned(),
-        "czas_zgloszenia".to_owned(),
-        "rodzaj".to_owned(),
-        "nr_telefonu_zglaszajacego".to_owned(),
-        "imie_zglaszajacego".to_owned(),
-        "nazwisko_zglaszajacego".to_owned()
-    ]);
 
     reports
         .iter()
@@ -57,7 +43,7 @@ pub fn write_reports_to_file(snapshot_name: &str, reports: &[Report]) {
             let items = &[
                 report.id.to_string(),
                 report.place_id.to_string(),
-                report.time.timestamp_millis().to_string(),
+                report.time.to_string(),
                 report.report_type.to_string(),
                 report.reporter.phone_number.to_string(),
                 report.reporter.first_name.to_string(),
@@ -69,10 +55,7 @@ pub fn write_reports_to_file(snapshot_name: &str, reports: &[Report]) {
 
 pub fn write_database_policemen_to_file(snapshot_name: &str, policemen: &[Policeman]) {
     let mut file = create_file(snapshot_name, POLICEMEN_DB_OUTPUT_FILE);
-    write_to_file(&mut file, &[
-        "id".to_string(),
-        "nr_sluzbowy".to_string()
-    ]);
+
     policemen
         .iter()
         .for_each(|policeman| {
@@ -86,29 +69,18 @@ pub fn write_database_policemen_to_file(snapshot_name: &str, policemen: &[Police
 
 pub fn write_csv_policemen_to_file(snapshot_name: &str, policemen: &[Policeman]) {
     let mut file = create_file(snapshot_name, POLICEMEN_CSV_OUTPUT_FILE);
-    write_to_file(
-        &mut file,
-        &[
-            "nr_sluzbowy".to_string(),
-            "data_urodzenia".to_string(),
-            "data_zatrudnienia".to_string(),
-            "imie".to_string(),
-            "nazwisko".to_string(),
-            "PESEL".to_string(),
-            "data zwolneinia".to_string()
-        ],
-    );
+
     policemen
         .iter()
         .for_each(|policeman| {
             let items = &[
                 policeman.service_number.to_string(),
-                policeman.person.birth_date.timestamp_millis().to_string(),
-                policeman.employment_date.timestamp_millis().to_string(),
+                policeman.person.birth_date.to_string(),
+                policeman.employment_date.to_string(),
                 policeman.person.first_name.to_string(),
                 policeman.person.last_name.to_string(),
                 policeman.person.pesel_number.to_string(),
-                policeman.resignment_date.timestamp_millis().to_string()
+                policeman.resignment_date.to_string()
             ];
             write_to_file(&mut file, items);
         });
@@ -116,15 +88,7 @@ pub fn write_csv_policemen_to_file(snapshot_name: &str, policemen: &[Policeman])
 
 pub fn write_csv_vehicle_to_file(snapshot_name: &str, vehicles: &[Vehicle]) {
     let mut file = create_file(snapshot_name, VEHICLE_CSV_OUTPUT_FILE);
-    write_to_file(
-        &mut file,
-        &[
-            "numer_rejestracyjny".to_string(),
-            "model".to_string(),
-            "rok_produkcji".to_string(),
-            "liczba_miejsc".to_string(),
-        ],
-    );
+
     vehicles
         .iter()
         .for_each(|vehicle| {
@@ -140,14 +104,7 @@ pub fn write_csv_vehicle_to_file(snapshot_name: &str, vehicles: &[Vehicle]) {
 
 pub fn write_database_vehicle_to_file(snapshot_name: &str, vehicles: &[Vehicle]) {
     let mut file = create_file(snapshot_name, VEHICLE_DB_OUTPUT_FILE);
-    write_to_file(
-        &mut file,
-        &[
-            "id".to_string(),
-            "nr_rejestracyjny".to_string(),
-            "typ".to_string(),
-        ],
-    );
+
     vehicles
         .iter()
         .for_each(|vehicle| {
@@ -162,17 +119,7 @@ pub fn write_database_vehicle_to_file(snapshot_name: &str, vehicles: &[Vehicle])
 
 pub fn write_patrols_to_file(snapshot_name: &str, patrols: &[Patrol]) {
     let mut file = create_file(snapshot_name, PATROLS_OUTPUT_FILE);
-    write_to_file(
-        &mut file,
-        &[
-            "id".to_string(),
-            "FK_pojazd".to_string(),
-            "FK_zgloszenie".to_string(),
-            "czas_wyslania".to_string(),
-            "czas_dojazdu".to_string(),
-            "czas_zakonczenia".to_string(),
-        ],
-    );
+
     patrols
         .iter()
         .for_each(|item| {
@@ -180,9 +127,9 @@ pub fn write_patrols_to_file(snapshot_name: &str, patrols: &[Patrol]) {
                 item.id.to_string(),
                 item.vehicle_id.to_string(),
                 item.report_id.to_string(),
-                item.sending_time.timestamp_millis().to_string(),
-                item.arrival_time.timestamp_millis().to_string(),
-                item.finish_time.timestamp_millis().to_string(),
+                item.sending_time.to_string(),
+                item.arrival_time.to_string(),
+                item.finish_time.to_string(),
             ];
             write_to_file(&mut file, items);
         });
@@ -190,13 +137,7 @@ pub fn write_patrols_to_file(snapshot_name: &str, patrols: &[Patrol]) {
 
 pub fn write_policeman_patrol_to_file(snapshot_name: &str, patrols: &[Patrol]) {
     let mut file = create_file(snapshot_name, POLICEMEN_PATROLS_OUTPUT_FILE);
-    write_to_file(
-        &mut file,
-        &[
-            "FK_policjant".to_string(),
-            "FK_patrol".to_string(),
-        ],
-    );
+
     patrols
         .iter()
         .flat_map(|item| item
