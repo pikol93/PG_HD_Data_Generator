@@ -111,7 +111,7 @@ pub fn write_database_vehicle_to_file(snapshot_name: &str, vehicles: &[Vehicle])
             let items = &[
                 vehicle.id.to_string(),
                 vehicle.registration_plate.to_string(),
-                "terenowy".to_string(),
+                vehicle.vehicle_type.to_string(),
             ];
             write_to_file(&mut file, items);
         });

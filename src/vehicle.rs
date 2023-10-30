@@ -32,6 +32,7 @@ pub struct Vehicle {
     pub manufacture_year: u32,
     pub seat_count: u32,
     pub state: VehicleState,
+    pub vehicle_type: &'static str,
 }
 
 impl Vehicle {
@@ -43,6 +44,7 @@ impl Vehicle {
             manufacture_year: generator.gen_range(MANUFACTURE_YEAR_MIN..MANUFACTURE_YEAR_MAX),
             seat_count: DEFAULT_SEAT_COUNT,
             state: VehicleState::Available,
+            vehicle_type: "terenowy",
         }
     }
 }
