@@ -21,23 +21,23 @@ mod patrol;
 mod io;
 
 // 10 minutes
-const MIN_SECONDS_BETWEEN_REPORTS: i64 = 600;
+const MIN_SECONDS_BETWEEN_REPORTS: i64 = 600000 * 2;
 // 40 minutes
-const MAX_SECONDS_BETWEEN_REPORTS: i64 = 2400;
+const MAX_SECONDS_BETWEEN_REPORTS: i64 = 2400000 * 2;
 // 5 minutes
 const MIN_REPORT_TO_SENDING_SECONDS: i64 = 300;
 // 15 minutes
 const MAX_REPORT_TO_SENDING_SECONDS: i64 = 900;
 const POLICEMEN_COUNT: usize = 80;
 const VEHICLES_COUNT: usize = 60;
-const POLICEMAN_LAST_NAME_CHANGE_EVENTS_COUNT: i64 = 5;
+const POLICEMAN_LAST_NAME_CHANGE_EVENTS_COUNT: i64 = 20;
 const TWO_PATROLS_CHANCE: f64 = 0.1;
 
 fn main() {
     let data_start_date = Utc.with_ymd_and_hms(2015, 6, 1, 0, 0, 0).unwrap();
     let snapshots = [
-        ("SNAPSHOT_A_", false, Utc.with_ymd_and_hms(2020, 6, 5, 0, 0, 0).unwrap()),
-        ("SNAPSHOT_B_", true, Utc.with_ymd_and_hms(2021, 6, 10, 0, 0, 0).unwrap()),
+        ("SNAPSHOT_A_", false, Utc.with_ymd_and_hms(2016, 6, 5, 0, 0, 0).unwrap()),
+        ("SNAPSHOT_B_", true, Utc.with_ymd_and_hms(2017, 6, 10, 0, 0, 0).unwrap()),
     ];
 
     let mut generator = thread_rng();
@@ -193,7 +193,7 @@ fn main() {
             EventAction::PolicemanLastNameChange => {
                 policemen
                     .iter_mut()
-                    .map(|policeman| policeman.person)
+                    .map(|policeman| &mut policeman.person)
                     .choose(&mut generator)
                     .unwrap()
                     .change_to_random_surname(&mut generator);
