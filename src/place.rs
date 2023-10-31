@@ -17,8 +17,7 @@ pub fn get_all_places() -> &'static Vec<Place> {
 
 fn create_places_from_str(data: &'static str) -> Vec<Place> {
     let mut counter = 0;
-    data
-        .split('\n')
+    data.split('\n')
         .filter_map(|line| {
             let mut line_split = line.split(',');
             let Some(city) = line_split.next() else {
@@ -28,7 +27,11 @@ fn create_places_from_str(data: &'static str) -> Vec<Place> {
                 return None;
             };
 
-            let place = Some(Place { id: counter, city, street });
+            let place = Some(Place {
+                id: counter,
+                city,
+                street,
+            });
             counter += 1;
             place
         })

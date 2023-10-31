@@ -1,13 +1,14 @@
+use crate::person::Person;
+use crate::string_occurrences::StringOccurrences;
 use chrono::{DateTime, Utc};
 use once_cell::sync::Lazy;
 use rand::prelude::ThreadRng;
 use rand::Rng;
-use crate::person::Person;
-use crate::string_occurrences::StringOccurrences;
 
 const REPORT_TYPES_STRING: &str = include_str!("../data/report_types.txt");
 
-static REPORT_TYPE_ENTRIES: Lazy<StringOccurrences> = Lazy::new(|| StringOccurrences::from_str(REPORT_TYPES_STRING));
+static REPORT_TYPE_ENTRIES: Lazy<StringOccurrences> =
+    Lazy::new(|| StringOccurrences::from_str(REPORT_TYPES_STRING));
 
 #[derive(Debug, Copy, Clone)]
 pub struct Report {
@@ -19,7 +20,12 @@ pub struct Report {
 }
 
 impl Report {
-    pub fn generate_with_time_and_id(generator: &mut ThreadRng, time: DateTime<Utc>, max_place_id: usize, id: usize) -> Self {
+    pub fn generate_with_time_and_id(
+        generator: &mut ThreadRng,
+        time: DateTime<Utc>,
+        max_place_id: usize,
+        id: usize,
+    ) -> Self {
         // The ID related to the reporter does not need to be unique
         const PERSON_ID: usize = 0;
 

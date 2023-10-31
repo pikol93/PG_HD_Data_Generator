@@ -1,6 +1,6 @@
-use std::str::FromStr;
 use rand::prelude::ThreadRng;
 use rand::RngCore;
+use std::str::FromStr;
 
 #[derive(Debug, Copy, Clone)]
 pub struct StringOccurrencesEntry {
@@ -35,11 +35,12 @@ impl StringOccurrences {
             })
             .collect::<Vec<_>>();
 
-        let total_occurrences = entries.iter()
-            .map(|entry| entry.occurrences)
-            .sum();
+        let total_occurrences = entries.iter().map(|entry| entry.occurrences).sum();
 
-        Self { total_occurrences, entries }
+        Self {
+            total_occurrences,
+            entries,
+        }
     }
 
     pub fn get_random_entry(self: &Self, generator: &mut ThreadRng) -> &'static str {

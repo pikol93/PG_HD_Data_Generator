@@ -1,6 +1,6 @@
-use std::cmp::Ordering;
-use chrono::{DateTime, Utc};
 use crate::person::Policeman;
+use chrono::{DateTime, Utc};
+use std::cmp::Ordering;
 
 #[derive(Debug, Copy, Clone)]
 pub enum EventAction {
@@ -12,7 +12,6 @@ pub enum EventAction {
     Snapshot(&'static str, bool),
     PolicemanLastNameChange,
 }
-
 
 #[derive(Debug, Copy, Clone)]
 pub struct Event {

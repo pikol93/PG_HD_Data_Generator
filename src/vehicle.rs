@@ -1,9 +1,9 @@
-use std::iter::Iterator;
-use std::rc::Rc;
+use crate::string_occurrences::StringOccurrences;
 use once_cell::sync::Lazy;
 use rand::prelude::{SliceRandom, ThreadRng};
 use rand::Rng;
-use crate::string_occurrences::StringOccurrences;
+use std::iter::Iterator;
+use std::rc::Rc;
 
 const VEHICLE_MODELS_STRING: &str = include_str!("../data/vehicle_models.txt");
 const REGISTRATION_PLATE_CODES_STRING: &str = include_str!("../data/registration_plate_codes.txt");
@@ -12,11 +12,13 @@ const MANUFACTURE_YEAR_MIN: u32 = 2005;
 const MANUFACTURE_YEAR_MAX: u32 = 2020;
 const EXPECTED_REGISTRATION_PLATE_LENGTH: usize = 8;
 const DEFAULT_SEAT_COUNT: u32 = 5;
-static REGISTRATION_PLATE_ALLOWED_CHARACTERS: Lazy<Vec<char>> = Lazy::new(|| ('0'..='9').chain('A'..='Z').collect::<Vec<_>>());
+static REGISTRATION_PLATE_ALLOWED_CHARACTERS: Lazy<Vec<char>> =
+    Lazy::new(|| ('0'..='9').chain('A'..='Z').collect::<Vec<_>>());
 
-
-static VEHICLE_MODELS_ENTRIES: Lazy<StringOccurrences> = Lazy::new(|| StringOccurrences::from_str(VEHICLE_MODELS_STRING));
-static REGISTRATION_PLATE_CODES_ENTRIES: Lazy<StringOccurrences> = Lazy::new(|| StringOccurrences::from_str(REGISTRATION_PLATE_CODES_STRING));
+static VEHICLE_MODELS_ENTRIES: Lazy<StringOccurrences> =
+    Lazy::new(|| StringOccurrences::from_str(VEHICLE_MODELS_STRING));
+static REGISTRATION_PLATE_CODES_ENTRIES: Lazy<StringOccurrences> =
+    Lazy::new(|| StringOccurrences::from_str(REGISTRATION_PLATE_CODES_STRING));
 
 #[derive(Debug, Copy, Clone, PartialEq)]
 pub enum VehicleState {
@@ -56,7 +58,9 @@ fn generate_registration_plate(generator: &mut ThreadRng) -> String {
     registration_plate.push(' ');
 
     for _ in 0..(EXPECTED_REGISTRATION_PLATE_LENGTH - registration_plate.len()) {
-        let registration_plate_char = REGISTRATION_PLATE_ALLOWED_CHARACTERS.choose(generator).unwrap();
+        let registration_plate_char = REGISTRATION_PLATE_ALLOWED_CHARACTERS
+            .choose(generator)
+            .unwrap();
         registration_plate.push(*registration_plate_char);
     }
 

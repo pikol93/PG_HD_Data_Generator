@@ -1,7 +1,7 @@
-use chrono::{Datelike, DateTime, Days, Timelike, TimeZone, Utc};
+use chrono::{DateTime, Datelike, Days, TimeZone, Timelike, Utc};
 use once_cell::sync::Lazy;
-use rand::Rng;
 use rand::rngs::ThreadRng;
+use rand::Rng;
 
 use crate::string_occurrences::StringOccurrences;
 
@@ -19,11 +19,22 @@ const MAX_DAYS_AFTER_BIRTH_TO_EMPLOYMENT: u64 = 12783; // 35 years
 const MIN_EMPLOYMENT_DURATION: u64 = 365; // 1 year
 const MAX_EMPLOYMENT_DURATION: u64 = 7305; // 20 years
 
-static MIN_BIRTH_DATE: Lazy<u64> = Lazy::new(|| Utc.with_ymd_and_hms(1970, 1, 1, 0, 0, 0).unwrap().timestamp() as u64);
-static MAX_BIRTH_DATE: Lazy<u64> = Lazy::new(|| Utc.with_ymd_and_hms(1995, 12, 1, 0, 0, 0).unwrap().timestamp() as u64);
-static FIRST_NAMES_ENTRIES: Lazy<StringOccurrences> = Lazy::new(|| StringOccurrences::from_str(FIRST_NAMES_STRING));
-static LAST_NAMES_ENTRIES: Lazy<StringOccurrences> = Lazy::new(|| StringOccurrences::from_str(LAST_NAMES_STRING));
-static RANK_ENTRIES: Lazy<StringOccurrences> = Lazy::new(|| StringOccurrences::from_str(RANKS_STRING));
+static MIN_BIRTH_DATE: Lazy<u64> = Lazy::new(|| {
+    Utc.with_ymd_and_hms(1970, 1, 1, 0, 0, 0)
+        .unwrap()
+        .timestamp() as u64
+});
+static MAX_BIRTH_DATE: Lazy<u64> = Lazy::new(|| {
+    Utc.with_ymd_and_hms(1995, 12, 1, 0, 0, 0)
+        .unwrap()
+        .timestamp() as u64
+});
+static FIRST_NAMES_ENTRIES: Lazy<StringOccurrences> =
+    Lazy::new(|| StringOccurrences::from_str(FIRST_NAMES_STRING));
+static LAST_NAMES_ENTRIES: Lazy<StringOccurrences> =
+    Lazy::new(|| StringOccurrences::from_str(LAST_NAMES_STRING));
+static RANK_ENTRIES: Lazy<StringOccurrences> =
+    Lazy::new(|| StringOccurrences::from_str(RANKS_STRING));
 
 #[derive(Debug, Copy, Clone)]
 pub struct Person {
@@ -68,7 +79,10 @@ impl Person {
 
     pub fn change_to_random_surname(&mut self, generator: &mut ThreadRng) {
         let new_name = LAST_NAMES_ENTRIES.get_random_entry(generator);
-        println!("Changed last name of person {}: {} -> {}", self.pesel_number, self.last_name, new_name);
+        println!(
+            "Changed last name of person {}: {} -> {}",
+            self.pesel_number, self.last_name, new_name
+        );
         self.last_name = new_name;
     }
 }
@@ -76,8 +90,10 @@ impl Person {
 impl Policeman {
     pub fn generate_with_id(generator: &mut ThreadRng, id: usize) -> Self {
         let person = Person::generate_with_id(generator, id);
-        let employment_date = generate_employment_date_from_birth_date(generator, &person.birth_date);
-        let resignment_date = generate_resignation_date_from_employment_date(generator, &employment_date);
+        let employment_date =
+            generate_employment_date_from_birth_date(generator, &person.birth_date);
+        let resignment_date =
+            generate_resignation_date_from_employment_date(generator, &employment_date);
 
         Self {
             service_number: generator.gen_range(SERVICE_NUMBER_MIN..SERVICE_NUMBER_MAX),
@@ -89,10 +105,15 @@ impl Policeman {
         }
     }
 
-    pub fn generate_just_employed_with_id(generator: &mut ThreadRng, employment_date: &DateTime<Utc>, id: usize) -> Self {
+    pub fn generate_just_employed_with_id(
+        generator: &mut ThreadRng,
+        employment_date: &DateTime<Utc>,
+        id: usize,
+    ) -> Self {
         let mut person = Person::generate_with_id(generator, id);
         person.birth_date = generate_birth_date_from_employment_date(generator, employment_date);
-        let resignment_date = generate_resignation_date_from_employment_date(generator, employment_date);
+        let resignment_date =
+            generate_resignation_date_from_employment_date(generator, employment_date);
 
         Self {
             service_number: generator.gen_range(SERVICE_NUMBER_MIN..SERVICE_NUMBER_MAX),
@@ -119,19 +140,36 @@ fn generate_birth_date(generator: &mut ThreadRng) -> DateTime<Utc> {
         .unwrap()
 }
 
-fn generate_birth_date_from_employment_date(generator: &mut ThreadRng, birth_date: &DateTime<Utc>) -> DateTime<Utc> {
-    let days_after_birth = generator.gen_range(MIN_DAYS_AFTER_BIRTH_TO_EMPLOYMENT..MAX_DAYS_AFTER_BIRTH_TO_EMPLOYMENT);
-    birth_date.checked_sub_days(Days::new(days_after_birth)).unwrap()
+fn generate_birth_date_from_employment_date(
+    generator: &mut ThreadRng,
+    birth_date: &DateTime<Utc>,
+) -> DateTime<Utc> {
+    let days_after_birth =
+        generator.gen_range(MIN_DAYS_AFTER_BIRTH_TO_EMPLOYMENT..MAX_DAYS_AFTER_BIRTH_TO_EMPLOYMENT);
+    birth_date
+        .checked_sub_days(Days::new(days_after_birth))
+        .unwrap()
 }
 
-fn generate_employment_date_from_birth_date(generator: &mut ThreadRng, birth_date: &DateTime<Utc>) -> DateTime<Utc> {
-    let days_after_birth = generator.gen_range(MIN_DAYS_AFTER_BIRTH_TO_EMPLOYMENT..MAX_DAYS_AFTER_BIRTH_TO_EMPLOYMENT);
-    birth_date.checked_add_days(Days::new(days_after_birth)).unwrap()
+fn generate_employment_date_from_birth_date(
+    generator: &mut ThreadRng,
+    birth_date: &DateTime<Utc>,
+) -> DateTime<Utc> {
+    let days_after_birth =
+        generator.gen_range(MIN_DAYS_AFTER_BIRTH_TO_EMPLOYMENT..MAX_DAYS_AFTER_BIRTH_TO_EMPLOYMENT);
+    birth_date
+        .checked_add_days(Days::new(days_after_birth))
+        .unwrap()
 }
 
-fn generate_resignation_date_from_employment_date(generator: &mut ThreadRng, employment_date: &DateTime<Utc>) -> DateTime<Utc> {
+fn generate_resignation_date_from_employment_date(
+    generator: &mut ThreadRng,
+    employment_date: &DateTime<Utc>,
+) -> DateTime<Utc> {
     let days_after_birth = generator.gen_range(MIN_EMPLOYMENT_DURATION..MAX_EMPLOYMENT_DURATION);
-    employment_date.checked_add_days(Days::new(days_after_birth)).unwrap()
+    employment_date
+        .checked_add_days(Days::new(days_after_birth))
+        .unwrap()
 }
 
 fn birth_date_to_pesel(generator: &mut ThreadRng, birth_date: &DateTime<Utc>) -> u64 {
