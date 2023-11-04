@@ -246,10 +246,10 @@ fn main() {
                 write_places_to_file(snapshot_name, places);
                 write_reports_to_file(snapshot_name, &reports);
                 write_database_policemen_to_file(snapshot_name, &policemen);
-                write_csv_policemen_to_file(snapshot_name, &policemen);
+                write_csv_policemen_to_file(snapshot_name, &policemen, current_time);
                 write_csv_vehicle_to_file(snapshot_name, &vehicles);
                 write_database_vehicle_to_file(snapshot_name, &vehicles);
-                write_patrols_to_file(snapshot_name, &patrols);
+                write_patrols_to_file(snapshot_name, &patrols, current_time);
                 write_policeman_patrol_to_file(snapshot_name, &patrols);
                 dbg!(
                     snapshot_name,

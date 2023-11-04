@@ -3,6 +3,7 @@ use crate::person::Policeman;
 use crate::place::Place;
 use crate::report::Report;
 use crate::vehicle::Vehicle;
+use chrono::{DateTime, Utc};
 use std::fs::File;
 use std::io::Write;
 use std::ops::Add;
@@ -18,6 +19,16 @@ const VEHICLE_CSV_OUTPUT_FILE: &str = "vehicle_csv.csv";
 const PATROLS_OUTPUT_FILE: &str = "patrols.csv";
 const POLICEMEN_PATROLS_OUTPUT_FILE: &str = "policemen_patrols.csv";
 const COLUMN_DELIMITER: &str = ",";
+
+macro_rules! value_if_happened {
+    ($event_date: expr, $snapshot_date: expr) => {
+        if $event_date < $snapshot_date {
+            $event_date.to_string()
+        } else {
+            "".to_string()
+        }
+    };
+}
 
 pub fn write_places_to_file(snapshot_name: &str, places: &[Place]) {
     let mut file = create_file(snapshot_name, PLACES_OUTPUT_FILE);
@@ -61,7 +72,11 @@ pub fn write_database_policemen_to_file(snapshot_name: &str, policemen: &[Police
     });
 }
 
-pub fn write_csv_policemen_to_file(snapshot_name: &str, policemen: &[Policeman]) {
+pub fn write_csv_policemen_to_file(
+    snapshot_name: &str,
+    policemen: &[Policeman],
+    snapshot_date: DateTime<Utc>,
+) {
     let mut file = create_file(snapshot_name, POLICEMEN_CSV_OUTPUT_FILE);
 
     policemen.iter().for_each(|policeman| {
@@ -72,7 +87,7 @@ pub fn write_csv_policemen_to_file(snapshot_name: &str, policemen: &[Policeman])
             policeman.person.first_name.to_string(),
             policeman.person.last_name.to_string(),
             policeman.person.pesel_number.to_string(),
-            policeman.resignment_date.to_string(),
+            value_if_happened!(policeman.resignment_date, snapshot_date),
         ];
         write_to_file(&mut file, items);
     });
@@ -105,7 +120,11 @@ pub fn write_database_vehicle_to_file(snapshot_name: &str, vehicles: &[Vehicle])
     });
 }
 
-pub fn write_patrols_to_file(snapshot_name: &str, patrols: &[Patrol]) {
+pub fn write_patrols_to_file(
+    snapshot_name: &str,
+    patrols: &[Patrol],
+    snapshot_date: DateTime<Utc>,
+) {
     let mut file = create_file(snapshot_name, PATROLS_OUTPUT_FILE);
 
     patrols.iter().for_each(|item| {
@@ -114,8 +133,8 @@ pub fn write_patrols_to_file(snapshot_name: &str, patrols: &[Patrol]) {
             item.vehicle_id.to_string(),
             item.report_id.to_string(),
             item.sending_time.to_string(),
-            item.arrival_time.to_string(),
-            item.finish_time.to_string(),
+            value_if_happened!(item.arrival_time, snapshot_date),
+            value_if_happened!(item.finish_time, snapshot_date),
         ];
         write_to_file(&mut file, items);
     });
