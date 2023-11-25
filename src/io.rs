@@ -1,13 +1,15 @@
+use std::fs::File;
+use std::io::Write;
+use std::ops::Add;
+use std::path::Path;
+
+use chrono::{DateTime, Utc};
+
 use crate::patrol::Patrol;
 use crate::person::Policeman;
 use crate::place::Place;
 use crate::report::Report;
 use crate::vehicle::Vehicle;
-use chrono::{DateTime, Utc};
-use std::fs::File;
-use std::io::Write;
-use std::ops::Add;
-use std::path::Path;
 
 const PLACES_OUTPUT_DIRECTORY: &str = "output/";
 const PLACES_OUTPUT_FILE: &str = "places.csv";
@@ -81,6 +83,7 @@ pub fn write_csv_policemen_to_file(
 
     policemen.iter().for_each(|policeman| {
         let items = &[
+            policeman.person.id.to_string(),
             policeman.service_number.to_string(),
             policeman.person.birth_date.to_string(),
             policeman.employment_date.to_string(),
@@ -98,6 +101,7 @@ pub fn write_csv_vehicle_to_file(snapshot_name: &str, vehicles: &[Vehicle]) {
 
     vehicles.iter().for_each(|vehicle| {
         let items = &[
+            vehicle.id.to_string(),
             vehicle.registration_plate.to_string(),
             vehicle.model.to_string(),
             vehicle.manufacture_year.to_string(),
