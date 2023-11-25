@@ -22,10 +22,20 @@ const PATROLS_OUTPUT_FILE: &str = "patrols.csv";
 const POLICEMEN_PATROLS_OUTPUT_FILE: &str = "policemen_patrols.csv";
 const COLUMN_DELIMITER: &str = ",";
 
-macro_rules! value_if_happened {
+macro_rules! datetime_if_happened {
     ($event_date: expr, $snapshot_date: expr) => {
         if $event_date < $snapshot_date {
             $event_date.to_string()
+        } else {
+            "".to_string()
+        }
+    };
+}
+
+macro_rules! date_if_happened {
+    ($event_date: expr, $snapshot_date: expr) => {
+        if $event_date < $snapshot_date {
+            $event_date.date_naive().to_string()
         } else {
             "".to_string()
         }
@@ -85,12 +95,12 @@ pub fn write_csv_policemen_to_file(
         let items = &[
             policeman.person.id.to_string(),
             policeman.service_number.to_string(),
-            policeman.person.birth_date.to_string(),
-            policeman.employment_date.to_string(),
+            policeman.person.birth_date.date_naive().to_string(),
+            policeman.employment_date.date_naive().to_string(),
             policeman.person.first_name.to_string(),
             policeman.person.last_name.to_string(),
             policeman.person.pesel_number.to_string(),
-            value_if_happened!(policeman.resignment_date, snapshot_date),
+            date_if_happened!(policeman.resignment_date, snapshot_date),
         ];
         write_to_file(&mut file, items);
     });
@@ -137,8 +147,8 @@ pub fn write_patrols_to_file(
             item.vehicle_id.to_string(),
             item.report_id.to_string(),
             item.sending_time.to_string(),
-            value_if_happened!(item.arrival_time, snapshot_date),
-            value_if_happened!(item.finish_time, snapshot_date),
+            datetime_if_happened!(item.arrival_time, snapshot_date),
+            datetime_if_happened!(item.finish_time, snapshot_date),
         ];
         write_to_file(&mut file, items);
     });
