@@ -1,0 +1,331 @@
+0,Czarlin,ul. Starogardzka
+1,Czarlin,ul. Sadowa
+2,Czarlin,ul. Spacerowa
+3,Czarlin,ul. Tczewska
+4,Czarlin,ul. Gniewska
+5,Czarlin,ul. Krotka
+6,Czarlin,ul. Prosta
+7,Czarlin,ul. Sloneczna
+8,Czarlin,ul. Dworcowa
+9,Czarlin,ul. Lesna
+10,Czarlin,ul. Szkolna
+11,Czarlin,ul. Za Torami
+12,Czarlin,ul. Lipowa
+13,Czarlin,ul. Narkowska
+14,Czarlin,ul. Klonowa
+15,Czarlin,ul. Malborska
+16,Rokitki,ul. Kolejowa
+17,Rokitki,ul. Swierkowa
+18,Rokitki,ul. Brzozowa
+19,Rokitki,ul. Cyprysowa
+20,Rokitki,ul. Tczewska
+21,Rokitki,ul. Krotka
+22,Rokitki,ul. Sloneczna
+23,Rokitki,ul. Lesna
+24,Rokitki,ul. Skarszewska
+25,Rokitki,ul. Kasztanowa
+26,Rokitki,ul. Jesionowa
+27,Rokitki,ul. Piekna
+28,Rokitki,ul. Kwiatowa
+29,Rokitki,ul. Polana Lesna
+30,Rokitki,ul. Nowa
+31,Rokitki,ul. Makowa
+32,Rokitki,ul. Czeresniowa
+33,Rokitki,ul. Wisniowa
+34,Lisewo Malborskie,ul. Marca 10
+35,Lisewo Malborskie,ul. Niepodleglosci
+36,Lisewo Malborskie,ul. Braterska
+37,Lisewo Malborskie,ul. Kolejowa
+38,Lisewo Malborskie,ul. Wyzwolenia
+39,Lisewo Malborskie,ul. Robotnicza
+40,Lisewo Malborskie,ul. Jana Pawla II
+41,Baldowo,ul. Dluga
+42,Baldowo,ul. Wojciecha sw.
+43,Baldowo,ul. Zlote Lany
+44,Baldowo,ul. Milosza Czeslawa
+45,Baldowo,ul. Spokojna
+46,Baldowo,ul. Stenclowka
+47,Baldowo,ul. Na Wzgorzu
+48,Baldowo,ul. Mila
+49,Baldowo,ul. Piekna
+50,Baldowo,ul. Sloneczna
+51,Baldowo,ul. Stanislawa
+52,Baldowo,ul. Boczna
+53,Baldowo,ul. Gospodarcza
+54,Baldowo,ul. Wspolna
+55,Baldowo,ul. Malborska
+56,Zajaczkowo,ul. Brzozowa
+57,Zajaczkowo,ul. Ogrodowa
+58,Zajaczkowo,ul. Malinowa
+59,Zajaczkowo,ul. Lisia
+60,Tczew,ul. Akacjowa
+61,Tczew,ul. Chelmonskiego Jozefa
+62,Tczew,Armii Czerwonej
+63,Tczew,ul. Baczynskiego Krzysztofa Kamila
+64,Tczew,ul. Brzechwy Jana
+65,Tczew,ul. Czyzykowska
+66,Tczew,ul. Fabryczna
+67,Tczew,ul. Fredry Aleksandra
+68,Tczew,ul. Iwaszkiewicza Jaroslawa
+69,Tczew,ul. Jaworowa
+70,Tczew,ul. Jodlowa
+71,Tczew,ul. Kozia
+72,Tczew,ul. Krotka
+73,Tczew,ul. Broniewskiego Wladyslawa
+74,Tczew,ul. Elzbiety
+75,Tczew,ul. Gdanska
+76,Tczew,ul. Kapitanska
+77,Tczew,ul. Kaszubska
+78,Tczew,ul. Lipowa
+79,Tczew,ul. Mieszka I
+80,Tczew,ul. Nowowiejska
+81,Tczew,ul. Pomorska
+82,Tczew,ul. Przemyslawa II
+83,Tczew,ul. Skarszewska
+84,Tczew,ul. Skromna
+85,Tczew,ul. Stanislawskiego Jana
+86,Tczew,ul. Strzelecka
+87,Tczew,ul. Suchostrzycka
+88,Tczew,ul. Wladyslawa Jagielly
+89,Tczew,ul. Za Portem
+90,Tczew,ul. Zulawska
+91,Tczew,ul. Brzozowa
+92,Tczew,ul. Dabrowskiego Jaroslawa
+93,Tczew,ul. Garncarska
+94,Tczew,ul. Hass Hanny
+95,Tczew,ul. Koscielna
+96,Tczew,ul. Bony Krolowej
+97,Tczew,ul. Marysienki Krolowej
+98,Tczew,ul. Piaskowa
+99,Tczew,ul. Pola Wincentego
+100,Tczew,ul. Prusa Boleslawa
+101,Tczew,ul. Sadowa
+102,Tczew,ul. Sambora
+103,Tczew,ul. Samborowny Malgorzaty
+104,Tczew,ul. Jana Sobieskiego
+105,Tczew,ul. Spacerowa
+106,Tczew,ul. Starowiejska
+107,Tczew,ul. Traugutta Romualda
+108,Tczew,ul. Wierzbowa
+109,Tczew,ul. Szewczyka Dratewki
+110,Tczew,ul. Andersa Wladyslawa
+111,Tczew,ul. Andersena Christiana
+112,Tczew,ul. Glowackiego Bartosza
+113,Tczew,ul. Gryfa Pomorskiego
+114,Tczew,ul. Kolejowa
+115,Tczew,ul. Lazienna
+116,Tczew,ul. Maja 1
+117,Tczew,ul. Paderewskiego Ignacego
+118,Tczew,ul. Rybacka
+119,Tczew,ul. Stwosza Wita
+120,Tczew,ul. Targowa
+121,Tczew,ul. Topolowa
+122,Tczew,ul. Zielona
+123,Tczew,ul. Dobrawy Ksiezniczki
+124,Tczew,ul. Wyszynskiego Stefana Kardynala
+125,Tczew,ul. Czatkowska
+126,Tczew,ul. Dokerow
+127,Tczew,ul. Dominikanska
+128,Tczew,ul. Dzialkowa
+129,Tczew,ul. Jana z Kolna
+130,Tczew,ul. Korczaka Janusza
+131,Tczew,ul. Kossaka Wojciecha
+132,Tczew,ul. Jadwigi Krolowej
+133,Tczew,ul. Kusocinskiego Janusza
+134,Tczew,ul. Lotnicza
+135,Tczew,ul. Marynarska
+136,Tczew,ul. Mlynska
+137,Tczew,ul. Baldowska
+138,Tczew,ul. Boleslawa Chrobrego
+139,Tczew,ul. Borchardta Karola
+140,Tczew,ul. Boya-Zelenskiego Tadeusza
+141,Tczew,ul. Chlodna
+142,Tczew,ul. Chlopska
+143,Tczew,ul. Flisakow
+144,Tczew,ul. Jagiellonska
+145,Tczew,ul. Jasinskiego Jakuba
+146,Tczew,ul. Jednosci Narodu
+147,Tczew,ul. Jurgo Wladyslawa
+148,Tczew,Konstytucji 3 Maja
+149,Tczew,ul. Krucza
+150,Tczew,ul. Lakowa
+151,Tczew,ul. Nad Wisla
+152,Tczew,ul. Niepodleglosci
+153,Tczew,ul. Ogrodowa
+154,Tczew,ul. Piastowska
+155,Tczew,ul. Pionierow
+156,Tczew,ul. Podmurna
+157,Tczew,ul. Polwiejska
+158,Tczew,ul. Rycerska
+159,Tczew,ul. Saperska
+160,Tczew,ul. Staffa Leopolda
+161,Tczew,ul. Szyprow
+162,Tczew,ul. Wilcza
+163,Tczew,ul. Wislana
+164,Tczew,ul. Wojska Polskiego
+165,Tczew,ul. Zamkowa
+166,Tczew,ul. Lecha
+167,Tczew,ul. Malczewskiego Jacka
+168,Tczew,ul. Mestwina
+169,Tczew,ul. Mostowa
+170,Tczew,ul. Nalkowskiej Zofii
+171,Tczew,ul. Obroncow Tczewa
+172,Tczew,ul. Podgorna
+173,Tczew,ul. Portowcow
+174,Tczew,ul. Prosta
+175,Tczew,ul. Przemyslowa
+176,Tczew,ul. Przybosia Juliana
+177,Tczew,ul. Rokicka
+178,Tczew,ul. Spoldzielcza
+179,Tczew,ul. Sychty ks. Bernarda
+180,Tczew,ul. Tuwima Juliana
+181,Tczew,ul. Witkiewicza Stanislawa Ignacego
+182,Tczew,ul. Zygmunta Starego
+183,Tczew,ul. Grimm Braci
+184,Tczew,ul. Czerwonego Kapturka
+185,Tczew,ul. Dygasinskiego Adolfa
+186,Tczew,ul. Grunwaldzka
+187,Tczew,ul. Jarzebinowa
+188,Tczew,ul. Kasztanowa
+189,Tczew,ul. Kazimierza Jagiellonczyka
+190,Tczew,ul. Kazimierza Wielkiego
+191,Tczew,ul. Konopnickiej Marii
+192,Tczew,ul. Kubusia Puchatka
+193,Tczew,ul. Nowy Rynek
+194,Tczew,ul. Okretowa
+195,Tczew,ul. Parkowa
+196,Tczew,ul. Robotnicza
+197,Tczew,ul. Rzemieslnicza
+198,Tczew,ul. Sikorskiego gen. Wladyslawa
+199,Tczew,ul. Stara
+200,Tczew,ul. Struga Andrzeja
+201,Tczew,ul. Warsztatowa
+202,Tczew,ul. Malinowska
+203,Tczew,ul. Pinokia
+204,Tczew,ul. Nadbrzezna
+205,Tczew,ul. Obroncow Westerplatte
+206,Tczew,ul. Partyzantow
+207,Tczew,ul. Polna
+208,Tczew,ul. Pomira
+209,Tczew,ul. Wyzwolenia
+210,Tczew,ul. Za Dworcem
+211,Tczew,ul. Zapolskiej Gabrieli
+212,Tczew,ul. Zeromskiego Stefana
+213,Tczew,ul. Szkoly Morskiej
+214,Tczew,pl. Plac Papieski
+215,Tczew,ul. Armii Krajowej
+216,Tczew,ul. Stefana Batorego
+217,Tczew,ul. Bosmanska
+218,Tczew,ul. Ceglarska
+219,Tczew,ul. Fenikowskiego Franciszka
+220,Tczew,ul. Harcerska
+221,Tczew,ul. Jasia i Malgosi
+222,Tczew,ul. Kreta
+223,Tczew,ul. Kwiatowa
+224,Tczew,ul. Nizinna
+225,Tczew,ul. Nowa
+226,Tczew,ul. Poludniowa
+227,Tczew,ul. Retmanska
+228,Tczew,ul. Sportowa
+229,Tczew,ul. Stoczniowcow
+230,Tczew,ul. Stroma
+231,Tczew,ul. Swietopelka
+232,Tczew,ul. Waska
+233,Tczew,ul. Wodna
+234,Tczew,ul. Wyczolkowskiego Leona
+235,Tczew,ul. Czyzewskiego Jozefa
+236,Tczew,ul. Lajming Anny
+237,Tczew,ul. Bolta ks. Feliksa
+238,Tczew,ul. Mlynskiego ks. Wladyslawa
+239,Tczew,ul. Forsterow
+240,Tczew,ul. Jagalskiego Wiktora
+241,Tczew,ul. Klima Romana
+242,Tczew,ul. Badkowskiego Lecha
+243,Tczew,ul. Kupczynskiego ks. Aleksandra
+244,Tczew,ul. Landowskiego Romana
+245,Tczew,ul. Kraziewicza Juliusza
+246,Tczew,ul. Janika pplk. Stanislawa
+247,Tczew,ul. Pileckiego rotm. Witolda
+248,Tczew,ul. Zeglarska
+249,Tczew,bulw. Bulwar Nadwislanski im. Ksiecia Sambora II
+250,Tczew,ul. Stankiewicza Kapitana Mamerta
+251,Tczew,ul. Polnocna
+252,Tczew,ul. Gierszewskiego por. Jozefa
+253,Tczew,ul. Wryczy ks. pplka Jozefa
+254,Tczew,ul. Dambka por. Jozefa
+255,Tczew,ul. Kuklinskiego plka Ryszarda
+256,Tczew,ul. Dworcowa
+257,Tczew,ul. Popieluszki ks. Jerzego
+258,Tczew,Rondo Kociewskie
+259,Tczew,Rondo Zolnierzy Wykletych
+260,Tczew,ul. Szymborskiej Wislawy
+261,Tczew,ul. Gazety Tczewskiej
+262,Tczew,Rondo Jasnej i Derslawa
+263,Tczew,Skwer Tczewskich Kolejarzy
+264,Tczew,ul. Jabloniowa
+265,Tczew,os. Osiedle Jabloniowe Wzgorze
+266,Tczew,Wiadukt 800-lecia Tczewa im. Marszalka Sejmu RP Macieja Plazynskiego
+267,Tczew,Skwer Doktora Schefflera
+268,Tczew,ul. Tczewskich Saperow
+269,Tczew,ul. Poligonowa
+270,Tczew,ul. Aleja Solidarnosci
+271,Tczew,ul. Dominika Biskupa Konstantyna
+272,Tczew,ul. Pasierba Ks.J.St.
+273,Tczew,ul. Pulaskiego
+274,Tczew,ul. Wigury
+275,Tczew,ul. Wybickiego
+276,Tczew,ul. Aleja Kociewska
+277,Tczew,ul. Stycznia 30-go
+278,Tczew,ul. Galczynskiego Konstantego
+279,Tczew,ul. Kasprowicza
+280,Tczew,ul. Chopina
+281,Tczew,ul. Matejki
+282,Tczew,ul. Kollataja
+283,Tczew,ul. Kosciuszki
+284,Tczew,ul. Krasinskiego
+285,Tczew,ul. Twardowskiego ks. Jana
+286,Tczew,ul. Milosza Czeslawa
+287,Tczew,ul. Al. Zwyciestwa
+288,Tczew,Rondo Spoldzielcow
+289,Tczew,Rondo Dworcowe
+290,Tczew,ul. Huberta Sw.
+291,Tczew,ul. Mysliwska
+292,Tczew,ul. Gen.Bema
+293,Tczew,ul. Frycza Modrzewskiego Andrzeja
+294,Tczew,ul. Okulickiego Generala Leopolda
+295,Tczew,ul. Tetmajera
+296,Tczew,ul. Dabrowskiego Generala
+297,Tczew,ul. Mickiewicza
+298,Tczew,ul. Sienkiewicza
+299,Tczew,ul. Slowackiego
+300,Tczew,ul. Kilinskiego
+301,Tczew,ul. Wybudowanie
+302,Tczew,ul. Suchostrzygi Dworzec
+303,Tczew,ul. Orkana
+304,Tczew,ul. Reja
+305,Tczew,ul. Kopernika
+306,Tczew,ul. Zwirki
+307,Tczew,ul. Piotrowo
+308,Tczew,ul. Orzeszkowej
+309,Tczew,ul. Rejtana
+310,Tczew,ul. Konarskiego
+311,Tczew,ul. Wyspianskiego
+312,Tczew,ul. Ks.Sciegiennego
+313,Tczew,ul. Bora - Komorowskiego Generala
+314,Tczew,Rondo Marszalka Jozefa Pilsudskiego
+315,Tczew,ul. Okrzei
+316,Tczew,ul. Grota - Roweckiego Generala
+317,Tczew,ul. Norwida C. Kamila
+318,Tczew,ul. Reymonta Wladyslawa
+319,Tczew,ul. Kochanowskiego
+320,Tczew,ul. Staszica
+321,Tczew,pl. Plac im. Jana Pawla II
+322,Tczew,Skwer Weteranow II Wojny Swiatowej
+323,Tczew,pl. Plac Sw. Grzegorza
+324,Tczew,Skwer 750-lecia Miasta Tczewa
+325,Tczew,pl. Plac Patriotow
+326,Tczew,pl. Plac Marszalka Jozefa Pilsudskiego
+327,Tczew,Skwer Romana Dmowskiego
+328,Tczew,pl. Plac Gen. Jozefa Hallera
+329,Tczew,Skwer Bohaterow Szymankowa
+330,Tczew,Skwer Ofiar Katynia
