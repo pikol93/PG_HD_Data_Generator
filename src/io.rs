@@ -165,7 +165,7 @@ pub fn write_policeman_patrol_to_file(snapshot_name: &str, patrols: &[Patrol]) {
                 .map(|policeman_id| (item.id, policeman_id))
         })
         .for_each(|(patrol_id, policeman_id)| {
-            let items = &[patrol_id.to_string(), policeman_id.to_string()];
+            let items = &[policeman_id.to_string(), patrol_id.to_string()];
             write_to_file(&mut file, items);
         });
 }
