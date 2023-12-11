@@ -25,9 +25,9 @@ mod string_occurrences;
 mod vehicle;
 
 // 10 minutes
-const MIN_SECONDS_BETWEEN_REPORTS: i64 = 600;
+const MIN_SECONDS_BETWEEN_REPORTS: i64 = 6000;
 // 40 minutes
-const MAX_SECONDS_BETWEEN_REPORTS: i64 = 2400;
+const MAX_SECONDS_BETWEEN_REPORTS: i64 = 24000;
 // 5 minutes
 const MIN_REPORT_TO_SENDING_SECONDS: i64 = 300;
 // 15 minutes
