@@ -2,8 +2,10 @@ use chrono::{DateTime, Duration, Utc};
 use rand::prelude::ThreadRng;
 use rand::Rng;
 
-const MIN_SENDING_TO_ARRIVAL_SECONDS: i64 = 300; // 5 minutes
-const MAX_SENDING_TO_ARRIVAL_SECONDS: i64 = 1200; // 20 minutes
+const MIN_SENDING_TO_ARRIVAL_SECONDS: i64 = 1500;
+// 25 minutes
+const MAX_SENDING_TO_ARRIVAL_SECONDS: i64 = 2100;
+// 35 minutes
 const MIN_ARRIVAL_TO_FINISH_SECONDS: i64 = 300; // 5 minutes
 const MAX_ARRIVAL_TO_FINISH_SECONDS: i64 = 1200; // 20 minutes
 
