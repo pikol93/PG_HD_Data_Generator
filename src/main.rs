@@ -25,9 +25,9 @@ mod string_occurrences;
 mod vehicle;
 
 // 10 minutes
-const MIN_SECONDS_BETWEEN_REPORTS: i64 = 6000;
+const MIN_SECONDS_BETWEEN_REPORTS: i64 = 3000;
 // 40 minutes
-const MAX_SECONDS_BETWEEN_REPORTS: i64 = 24000;
+const MAX_SECONDS_BETWEEN_REPORTS: i64 = 12000;
 // 5 minutes
 const MIN_REPORT_TO_SENDING_SECONDS: i64 = 300;
 // 15 minutes
@@ -43,12 +43,12 @@ fn main() {
         (
             "SNAPSHOT_A_",
             false,
-            Utc.with_ymd_and_hms(2016, 6, 5, 0, 0, 0).unwrap(),
+            Utc.with_ymd_and_hms(2023, 6, 5, 0, 0, 0).unwrap(),
         ),
         (
             "SNAPSHOT_B_",
             true,
-            Utc.with_ymd_and_hms(2017, 6, 10, 0, 0, 0).unwrap(),
+            Utc.with_ymd_and_hms(2023, 6, 10, 0, 0, 0).unwrap(),
         ),
     ];
 
